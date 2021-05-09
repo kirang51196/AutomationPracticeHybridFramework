@@ -27,7 +27,7 @@ public class LandingPageTest extends BaseTest {
 		
 		String landingPageActulaRedirectedUrl = landingPage.getLandingPageUrl();
 		logger.info("Landing page actual redirected URl is : " + landingPageActulaRedirectedUrl);
-		AssertJUnit.assertEquals(landingPageActulaRedirectedUrl, AppConstants.LANDING_PAGE_REDIRECTED_URL);
+		Assert.assertEquals(landingPageActulaRedirectedUrl, AppConstants.LANDING_PAGE_REDIRECTED_URL);
 		
 		logger.info("Test case ended: tc_01_verify_landing_page_url_redirection");
 	}
@@ -39,7 +39,7 @@ public class LandingPageTest extends BaseTest {
 		
 		String landingPageActualTitle = landingPage.getLandingTitle();
 		logger.info("Landing page actual title is : " + landingPageActualTitle);
-		AssertJUnit.assertEquals(landingPageActualTitle, AppConstants.LANDING_PAGE_TITLE);
+		Assert.assertEquals(landingPageActualTitle, AppConstants.LANDING_PAGE_TITLE);
 		
 		logger.info("Test case ended: tc_02_verify_landing_page_title");
 	}
@@ -66,10 +66,10 @@ public class LandingPageTest extends BaseTest {
 		// Validating the actual vs expected product categories
 		for (int i = 0; i < landingPageProdCategoryExpected.size(); i++) {
 			if (landingPageProdCategoryExpected.get(i).contentEquals(landingPageProdCategoryActual.get(i).getText())) {
-				AssertJUnit.assertTrue(true);
+				Assert.assertTrue(true);
 			}
 			else {
-				AssertJUnit.fail();
+				Assert.fail();
 			}
 		}	
 		
