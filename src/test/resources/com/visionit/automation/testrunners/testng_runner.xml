@@ -4,16 +4,17 @@
 <suite name="Suite" thread-count="4" parallel="tests">
 
 	<listeners>
-		<listener class-name="com.visionit.automation.testlistener.ExtentReportListener" />
-		<listener class-name="com.visionit.automation.testlistener.ScreenshotListener" />
+<!-- 		<listener class-name="com.visionit.automation.testlistener.ExtentReportListener" /> -->
+<!-- 		<listener class-name="com.visionit.automation.testlistener.ScreenshotListener" /> -->
+		<listener class-name="com.visionit.automation.testlistener.PdfListener" />
 	</listeners>
 	
 		  <test name="Landing Page Test With Chrome" parallel="methods">
 				<parameter name="browser" value="chrome"/>
 		    <classes> 
 		      <class name="com.visionit.automation.tests.LandingPageTest"/>
-		      <class name="com.visionit.automation.tests.RegisterPageTest"/>
-		      <class name="com.visionit.automation.tests.SocialMediaPagesTest"/>
+<!-- 		      <class name="com.visionit.automation.tests.RegisterPageTest"/> -->
+<!-- 		      <class name="com.visionit.automation.tests.SocialMediaPagesTest"/> -->
 		    </classes>
 		  </test> <!-- Test -->
 		  

@@ -5,10 +5,11 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.visionit.automation.base.BasePage;
 import com.visionit.automation.utils.ElementActions;
 import com.visionit.automation.variables.RegisterPageUserDetails;
 
-public class RegisterPage {
+public class RegisterPage extends BasePage{
 
 	private static final Logger logger = LogManager.getLogger(LandingPage.class);
 

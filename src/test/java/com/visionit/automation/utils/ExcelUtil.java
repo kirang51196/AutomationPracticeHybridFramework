@@ -13,7 +13,7 @@ public class ExcelUtil {
 
 	private static Workbook book;
 	private static Sheet sheet;
-	private static String TEST_DATA_SHEET_PATH = "./src/main/java/com/qa/hubspot/testdata/InterestSmart.xlsx";
+	private static String TEST_DATA_SHEET_PATH = ".src/test/resources/com/visionit/automation/testdata/AutomationPracticeUserData.xlsx";
 
 	public static Object[][] getTestData(String sheetName) {
 
