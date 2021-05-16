@@ -11,9 +11,11 @@ import java.util.ArrayList;
 public class AppConstants {
 	
 	
-	public static final int WEBDRIVER_WAIT_TIMEOUT = 15;
+	public static final int WEBDRIVER_WAIT_TIMEOUT = 20;
 	public static final String LANDING_PAGE_REDIRECTED_URL = "http://automationpractice.com/index.php";
 	public static final String LANDING_PAGE_TITLE = "My Store";
+
+
 	
 	public static ArrayList<String> landingPageProdCategoryExpected()
 	{

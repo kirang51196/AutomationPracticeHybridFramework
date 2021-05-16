@@ -7,4 +7,6 @@ public class SocialMediaPagesVariables {
 	public static final String twitterChannelNameText = "Selenium Framework";
 	public static final String facebookChannelNameText = "Selenium Framework";
 
+
+
 }

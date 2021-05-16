@@ -36,7 +36,7 @@ public class RegisterPage extends BasePage{
 	private By AddressComanyNameTextBoxElement = By.id("company");
 	private By AddressLine1TextBoxElement = By.id("address1");
 	private By AddressLine2TextBoxElement = By.id("address2");
-	private By AddressCityTextBoxElement = By.id("city");
+	private By AddressCityTextBoxElement = By.id("city");                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 	private By AddressStateDropDownElement = By.id("id_state");
 	private By AddressZipCodeTextBoxElement = By.id("postcode");
 	//private By AddressCountryDropDownElement = By.id("id_country");
