@@ -38,9 +38,9 @@ public class SendFriendRequestPage  extends BasePage{
     elementActions.doClick(MoreBtn);
     elementActions.doClick(sendfrndLinkclick);
     elementActions.doSendKeys(frndName, sendKeyDetails.FriendName);
-	logger.info("Sent text name as : " +frndName );
+	logger.info("Sent text name as : " +frndName);
 	elementActions.doSendKeys(frndEmail, sendKeyDetails.FriendEmail);
-	logger.info("Sent text name as : " +frndEmail );
+	logger.info("Sent text name as : " +frndEmail);
 	elementActions.doClick(clickonSubmit);
 	
 	String succesMsg = elementActions.doGetText(sendmailsusccessMsg);

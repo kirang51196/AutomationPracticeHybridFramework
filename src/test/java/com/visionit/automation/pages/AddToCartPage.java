@@ -29,8 +29,7 @@ public class AddToCartPage extends BasePage {
 	
   // Tc 19
    By CartBtn= By.xpath("//div[@class='col-sm-4 clearfix']/div/a");
-   By AddedItemPrice = By.xpath("//div[@id='page']/div/descendant::div[@class='cart-prices']/div[2]/span[1]");
-  // By AddedItemPrice = By.xpath("//div[@class='cart-prices']/div[2]/span[1]");
+   By AddedItemPrice = By.xpath("//div[@id='page']/div/descendant::span[@class='price cart_block_total ajax_block_cart_total']");
  
    //Tc 20 
    By removeProduct = By.xpath("//dt[@data-id='cart_block_product_1_1_0']/span/a");
@@ -39,10 +38,7 @@ public class AddToCartPage extends BasePage {
    
 	
 	
-//	By CheckItem1Name = By.xpath("//dt[@data-id='cart_block_product_1_1_0']/div/descendant::a[@title='Faded Short Sleeve T-shirts']");
-//	By CheckItem2Name = By.xpath("//dt[@data-id='cart_block_product_2_7_0']/div/descendant::a[@title='Blouse']");
-//	By CheckItem3Name = By.xpath("//dt[@data-id='cart_block_product_3_13_0']/div/descendant::a[@title='Printed Dress']");
-//	     
+  
 	
 	    // Constructor of the page:
 			public AddToCartPage(WebDriver driver) {

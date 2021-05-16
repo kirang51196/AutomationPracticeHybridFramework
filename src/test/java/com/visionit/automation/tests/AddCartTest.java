@@ -29,7 +29,7 @@ public class AddCartTest extends BaseTest{
         addcart.CheckAddeedItemName();
         logger.info("Added Cart Product NameVisible:");
 	    logger.info("Test case ended: tc_018_Validate_Same_Product_Added_To_Cart");
-	    }
+	 }
 	    
 
 	    @Test
