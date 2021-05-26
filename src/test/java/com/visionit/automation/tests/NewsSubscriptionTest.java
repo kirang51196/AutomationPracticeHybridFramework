@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.visionit.automation.base.BaseTest;
+import com.visionit.automation.utils.AppConstants;
 import com.visionit.automation.variables.NewsSubcriptionVariable;
 import com.visionit.automation.variables.sendKeyDetails;
 
@@ -18,7 +19,7 @@ private static final Logger logger = LogManager.getLogger(NewsSubscriptionTest.c
 		logger.info("Test case started: tc_16_verify_News_Subscription ");
 		
 		String NewsmailSuccessful = newsSubscription.newLetterSubscription();
-		Assert.assertEquals(NewsmailSuccessful,NewsSubcriptionVariable.NewsSubscriptionSuccessMsg );
+		Assert.assertEquals(NewsmailSuccessful, AppConstants.NewsSubscriptionSuccessMsg);
 		logger.info("Test case ended: tc_16_verify_News_Subscription ");
 
 }

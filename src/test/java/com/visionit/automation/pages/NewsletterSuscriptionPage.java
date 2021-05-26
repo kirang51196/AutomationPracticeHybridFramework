@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.visionit.automation.base.BasePage;
+import com.visionit.automation.utils.AppConstants;
 import com.visionit.automation.utils.ElementActions;
 import com.visionit.automation.utils.RandomNumberGeneratorUtil;
 import com.visionit.automation.variables.NewsSubcriptionVariable;
@@ -15,9 +16,8 @@ public class NewsletterSuscriptionPage  extends BasePage{
 	private static final Logger logger = LogManager.getLogger(NewsletterSuscriptionPage.class);
 
 	ElementActions elementActions;
-	NewsSubcriptionVariable newsubcriptionvariable;
+	//NewsSubcriptionVariable newsubcriptionvariable;
 
-	
 	// By Locators - Landing Page
 	private By sendEmail = By.id("newsletter-input");
 	private By submitBtnClick = By.name("submitNewsletter");
@@ -30,9 +30,10 @@ public class NewsletterSuscriptionPage  extends BasePage{
 	
 	
 	
-	public String newLetterSubscription() {
-		String newUserEmailId =newsubcriptionvariable.getUserNewEmailId();
-		elementActions.doSendKeys(sendEmail, newUserEmailId);
+	 public String newLetterSubscription() {
+		//elementActions.doMoveToElement(sendEmail);
+		//String newUserEmailId =newsubcriptionvariable.getUserNewEmailId();
+		elementActions.doSendKeys(sendEmail,AppConstants.News_Subsription_Email );
         elementActions.doClick(submitBtnClick);
 		elementActions.waitForElementVisible(newsSuccesMsg);
 		String NewsmailSuccessful = elementActions.doGetText(newsSuccesMsg);

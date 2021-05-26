@@ -45,7 +45,7 @@ public class AddToCartPage extends BasePage {
 				elementActions = new ElementActions(driver);
 			}
 		
-			// Page Actions:
+			// Page Actions: tc 17
 			public String AddToCart() {
 				elementActions.doMoveToElement(Tshirt);	
 				elementActions.doClick(addBtn1);
@@ -65,18 +65,22 @@ public class AddToCartPage extends BasePage {
 				return CartValue;
 
 		}
+			
+			//tc 18
 	  public void CheckAddeedItemName() {
 	 elementActions.doMoveToElement(CheckCartItem);
 	   wait.mediumWait();
 	  }
 	  
-	  public String CheckTotalPrice() {
+	  //tc 19
+	  public Double CheckTotalPrice() {
 		 elementActions.doMoveToElement(CartBtn);
-    String Price = elementActions.doGetText(AddedItemPrice);
+    Double Price = Double.parseDouble(elementActions.doGetText(AddedItemPrice));
 		return Price;
 		 
 	  }
 	  
+	  //tc 20
 	  public String AfterRemovingCheckCartValue() {
 		  elementActions.doMoveToElement(CheckCartItem);
 		  elementActions.doClick(removeProduct);
@@ -85,7 +89,7 @@ public class AddToCartPage extends BasePage {
 		 return AfterRemoverCartValue;
 	  }
 	  
-	  
+
 	  
 	  
 	  

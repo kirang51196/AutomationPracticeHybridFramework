@@ -14,7 +14,8 @@ public class AppConstants {
 	public static final int WEBDRIVER_WAIT_TIMEOUT = 20;
 	public static final String LANDING_PAGE_REDIRECTED_URL = "http://automationpractice.com/index.php";
 	public static final String LANDING_PAGE_TITLE = "My Store";
-
+     
+	public static final String News_Subsription_Email="monu12348@gmail.com";
 
 	
 	public static ArrayList<String> landingPageProdCategoryExpected()
@@ -28,5 +29,8 @@ public class AppConstants {
 	}
 	
 	public static final  String SIGNIN_PAGE_TITLE = "Login - My Store";
+	public static final String NewsSubscriptionSuccessMsg = "Newsletter : You have successfully subscribed to this newsletter.";
+
 
 }
+

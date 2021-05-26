@@ -9,9 +9,9 @@ import com.visionit.automation.base.BasePage;
 import com.visionit.automation.base.BaseTest;
 import com.visionit.automation.pages.AddToCartPage;
 
-public class AddCartTest extends BaseTest{
+public class UserAddCartTest extends BaseTest{
 	
-	private static final Logger logger = LogManager.getLogger(AddCartTest.class);
+	private static final Logger logger = LogManager.getLogger(UserAddCartTest.class);
 
 	@Test
 	public void tc_017_Add_To_Cart_Test() {
@@ -37,21 +37,21 @@ public class AddCartTest extends BaseTest{
 	  logger.info("Test case started: tc_019_Validate_Total_Price_Added_To_Cart");
 	  addcart.AddToCart();
       // addcart.CheckAddeedItemName();
-      String Price = addcart.CheckTotalPrice();
+      Double Price = addcart.CheckTotalPrice();
 	  logger.info("Added Cart Product TotalPrice:" +Price);
       logger.info("Test case ended: tc_019_Validate_Total_Price_Added_To_Cart");
 
 	    }
-	    
-	    @Test
-		 public void tc_020_Validate_After_Remove_Product_CartValue() {
-		 logger.info("Test case started: tc_020_Validate_After_Remove_Product_CartValue");
-		 addcart.AddToCart();
-		 String AfterRemoverCartValue = addcart.AfterRemovingCheckCartValue();
-		 logger.info("Added Cart Product TotalPrice:"+AfterRemoverCartValue);
-	     logger.info("Test case ended: tc_020_Validate_After_Remove_Product_CartValue");
-
-	    }
+//	    
+//	    @Test
+//		 public void tc_020_Validate_After_Remove_Product_CartValue() {
+//		 logger.info("Test case started: tc_020_Validate_After_Remove_Product_CartValue");
+//		 addcart.AddToCart();
+//		 String AfterRemoverCartValue = addcart.AfterRemovingCheckCartValue();
+//		 logger.info("Added Cart Product TotalPrice:"+AfterRemoverCartValue);
+//	     logger.info("Test case ended: tc_020_Validate_After_Remove_Product_CartValue");
+//
+//	    }
 }
 	    
 	    
