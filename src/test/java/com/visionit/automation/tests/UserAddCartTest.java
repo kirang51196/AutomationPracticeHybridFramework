@@ -32,34 +32,26 @@ public class UserAddCartTest extends BaseTest{
 	 }
 	    
 
-	    @Test
-	  public void tc_019_Validate_Total_Price_Added_To_Cart() {
-	  logger.info("Test case started: tc_019_Validate_Total_Price_Added_To_Cart");
-	  addcart.AddToCart();
-      // addcart.CheckAddeedItemName();
-      Double Price = addcart.CheckTotalPrice();
-	  logger.info("Added Cart Product TotalPrice:" +Price);
-      logger.info("Test case ended: tc_019_Validate_Total_Price_Added_To_Cart");
-
-	    }
-//	    
 //	    @Test
-//		 public void tc_020_Validate_After_Remove_Product_CartValue() {
-//		 logger.info("Test case started: tc_020_Validate_After_Remove_Product_CartValue");
-//		 addcart.AddToCart();
-//		 String AfterRemoverCartValue = addcart.AfterRemovingCheckCartValue();
-//		 logger.info("Added Cart Product TotalPrice:"+AfterRemoverCartValue);
-//	     logger.info("Test case ended: tc_020_Validate_After_Remove_Product_CartValue");
+//	  public void tc_019_Validate_Total_Price_Added_To_Cart() {
+//	  logger.info("Test case started: tc_019_Validate_Total_Price_Added_To_Cart");
+//	  addcart.AddToCart();
+//      // addcart.CheckAddeedItemName();
+//      Double Price = addcart.CheckTotalPrice();
+//	  logger.info("Added Cart Product TotalPrice:" +Price);
+//      logger.info("Test case ended: tc_019_Validate_Total_Price_Added_To_Cart");
 //
 //	    }
-}
 	    
-	    
-	    
-	    
-	    
-	    
-	    
+    @Test
+		 public void tc_020_Validate_After_Remove_Product_CartValue() {
+		 logger.info("Test case started: tc_020_Validate_After_Remove_Product_CartValue");
+		 addcart.AddToCart();
+	     String AfterRemoverCartValue = addcart.AfterRemovingCheckCartValue();
+	     logger.info("Added Cart Product TotalPrice:"+AfterRemoverCartValue);
+         logger.info("Test case ended: tc_020_Validate_After_Remove_Product_CartValue");
+    }
+	    }    
 	    
 	    
 	    

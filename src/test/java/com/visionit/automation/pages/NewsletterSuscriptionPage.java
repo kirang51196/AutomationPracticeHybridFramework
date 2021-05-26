@@ -9,7 +9,6 @@ import com.visionit.automation.base.BasePage;
 import com.visionit.automation.utils.AppConstants;
 import com.visionit.automation.utils.ElementActions;
 import com.visionit.automation.utils.RandomNumberGeneratorUtil;
-import com.visionit.automation.variables.NewsSubcriptionVariable;
 
 public class NewsletterSuscriptionPage  extends BasePage{
 	
@@ -37,5 +36,4 @@ public class NewsletterSuscriptionPage  extends BasePage{
 		String NewsmailSuccessful = elementActions.doGetText(newsSuccesMsg);
 		return NewsmailSuccessful;
 	}
-		
 }

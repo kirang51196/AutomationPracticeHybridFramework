@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 
 import com.visionit.automation.base.BaseTest;
 import com.visionit.automation.utils.AppConstants;
-import com.visionit.automation.variables.NewsSubcriptionVariable;
 import com.visionit.automation.variables.sendKeyDetails;
 
 public class NewsSubscriptionTest extends BaseTest {
