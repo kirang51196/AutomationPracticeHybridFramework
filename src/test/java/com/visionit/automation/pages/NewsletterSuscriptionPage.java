@@ -16,7 +16,7 @@ public class NewsletterSuscriptionPage  extends BasePage{
 	private static final Logger logger = LogManager.getLogger(NewsletterSuscriptionPage.class);
 
 	ElementActions elementActions;
-	//NewsSubcriptionVariable newsubcriptionvariable;
+	
 
 	// By Locators - Landing Page
 	private By sendEmail = By.id("newsletter-input");
@@ -31,8 +31,6 @@ public class NewsletterSuscriptionPage  extends BasePage{
 	
 	
 	 public String newLetterSubscription() {
-		//elementActions.doMoveToElement(sendEmail);
-		//String newUserEmailId =newsubcriptionvariable.getUserNewEmailId();
 		elementActions.doSendKeys(sendEmail,AppConstants.News_Subsription_Email );
         elementActions.doClick(submitBtnClick);
 		elementActions.waitForElementVisible(newsSuccesMsg);
