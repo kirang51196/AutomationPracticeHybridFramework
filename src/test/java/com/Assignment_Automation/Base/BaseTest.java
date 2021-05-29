@@ -10,6 +10,7 @@ import org.testng.annotations.Parameters;
 
 import com.Assignment_Automation.pages.ChangeImageColorPage;
 import com.Assignment_Automation.pages.EndToEndFeaturePage;
+import com.Assignment_Automation.pages.ReviewPage;
 import com.Assignment_Automation.pages.SendFriendFeaturePage;
 import com.Assignment_Automation.pages.SignUpPage;
 

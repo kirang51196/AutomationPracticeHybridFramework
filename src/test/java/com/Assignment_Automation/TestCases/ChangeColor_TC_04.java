@@ -13,11 +13,11 @@ public class ChangeColor_TC_04 extends  BaseTest {
 
 	@Test
 	public void tc_004_Change_Image_Color() {
-		logger.info("Test case started: tc_004_Change_Image_Color ");
+		logger.info("Test case started: tc_04_Change_Image_Color ");
 	    boolean checkImageColorChange = changeimgcolor.changeImgColor();
 	  	logger.info("Visibility status of Tshirt color change : " + checkImageColorChange);
 	  	Assert.assertEquals(checkImageColorChange, true);
-		logger.info("Test case ended: tc_004_Change_Image_Color");
+		logger.info("Test case ended: tc_04_Change_Image_Color");
 
 }
 

@@ -30,7 +30,13 @@ public class AppConstants {
 	
 	public static final  String SIGNIN_PAGE_TITLE = "Login - My Store";
 	public static final String NewsSubscriptionSuccessMsg = "Newsletter : You have successfully subscribed to this newsletter.";
-
+    
+	public static final String EmailID = "kirang51106@gmail.com";
+    public static final String Password ="Ywi26Us5Qcc@UMW";
+		
+    public static final String TITLEOFREVIEW = "Faded short sleeves T-shirt";
+	public static final String COMMENT = "Product quality is good but color slightly vary as shown in picture";
+	
 
 }
 
