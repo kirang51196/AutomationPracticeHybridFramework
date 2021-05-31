@@ -19,41 +19,41 @@ public class EndToEndFeaturePage extends BasePage {
 	
    //	By Locator
 	
-	By T_shirtBTn = By.xpath("//div[@id='block_top_menu']/ul/li[3]/a");
-	By ProductImgClick=By.xpath("//div[@class='product-image-container']/a/img");
-    By MoreBtn = By.xpath("//a[@title='View']/span");
-    By Amount = By.xpath("//span[@id='our_price_display']");
-    By QuantityIncrease= By.xpath("//*[@id='quantity_wanted']");
-    By SizeDropDown = By.xpath("//*[@id='group_1']");
-    By ClickOnAddToCart = By.xpath("//p[@id='add_to_cart']/button/span");
-    By sucussMsg = By.xpath("//*[@id='layer_cart']/div[1]/div[1]/h2");
-    By checkQuantity = By.xpath("//*[@id='layer_cart']/div[1]/div[1]/div[2]/div[1]");
-    By checkColor = By.id("layer_cart_product_attributes");
-    By checkTotalPrice =By.xpath("//*[@id='layer_cart_product_price']");
-    By clickOnProcedToCheckOut = By.xpath("//a[@title='Proceed to checkout']");
+	private By T_shirtBTn = By.xpath("//div[@id='block_top_menu']/ul/li[3]/a");
+	private By ProductImgClick=By.xpath("//div[@class='product-image-container']/a/img");
+	private By MoreBtn = By.xpath("//a[@title='View']/span");
+	private By Amount = By.xpath("//span[@id='our_price_display']");
+	private By QuantityIncrease= By.xpath("//*[@id='quantity_wanted']");
+	private By SizeDropDown = By.xpath("//*[@id='group_1']");
+	private By ClickOnAddToCart = By.xpath("//p[@id='add_to_cart']/button/span");
+	private By sucussMsg = By.xpath("//*[@id='layer_cart']/div[1]/div[1]/h2");
+	private By checkQuantity = By.xpath("//*[@id='layer_cart']/div[1]/div[1]/div[2]/div[1]");
+	private By checkColor = By.id("layer_cart_product_attributes");
+	private By checkTotalPrice =By.xpath("//*[@id='layer_cart_product_price']");
+	private By clickOnProcedToCheckOut = By.xpath("//a[@title='Proceed to checkout']");
     
     //After Click on Proceed to Checkout
-    By ProductName = By.xpath("//table[@id='cart_summary']/descendant::p[@class='product-name']/a");
-    By ProductIsInStock = By.xpath("//*[text()='In stock']");
-    By unitPrice= By.xpath("//*[text()='$16.51']");
-    By AgainCheckQuantity = By.xpath("//td[@class='cart_quantity text-center']/input[2]");
-    By FinalPrice = By.xpath("//td[text()='$35.02']");
-    By TotalShippingProductQuantity = By.xpath("//*[@id='total_shipping']");
-    By AgainClickOnProcedToCheckOut = By.xpath("//div[@id='center_column']/descendant::p[@class='cart_navigation clearfix']/a/span");
+	private By ProductName = By.xpath("//table[@id='cart_summary']/descendant::p[@class='product-name']/a");
+	private By ProductIsInStock = By.xpath("//*[text()='In stock']");
+	private By unitPrice= By.xpath("//*[text()='$16.51']");
+	private By AgainCheckQuantity = By.xpath("//td[@class='cart_quantity text-center']/input[2]");
+	private By FinalPrice = By.xpath("//td[text()='$35.02']");
+	private By TotalShippingProductQuantity = By.xpath("//*[@id='total_shipping']");
+	private By AgainClickOnProcedToCheckOut = By.xpath("//div[@id='center_column']/descendant::p[@class='cart_navigation clearfix']/a/span");
     
     //signinToAccount
-    By email=By.id("email");
-    By pass=By.id("passwd");
-    By loginBtn = By.id("SubmitLogin");
-    By cilckonProceedBtn = By.xpath("//button[@name='processAddress']/span");
-    By TermCondCheckBox = By.id("cgv");
-    By clickonProceedBtn2 =	By.xpath("//button[@name='processCarrier']/span");
+	private By email=By.id("email");
+	private By pass=By.id("passwd");
+	private By loginBtn = By.id("SubmitLogin");
+	private By cilckonProceedBtn = By.xpath("//button[@name='processAddress']/span");
+	private By TermCondCheckBox = By.id("cgv");
+	private By clickonProceedBtn2 =	By.xpath("//button[@name='processCarrier']/span");
     
     //Payment page Locator
-    By ClickOnPaybyBank = By.xpath("//a[@title='Pay by bank wire']");
-    By ClickOnConfirmOrder = By.xpath("//*[@id=\"cart_navigation\"]/button/span");	   
-    By OrderMsg = By.xpath("//div[@id='center_column']/div/p/strong");
-    By CheckAmount = By.xpath("//*[text()='$35.02']");
+	private By ClickOnPaybyBank = By.xpath("//a[@title='Pay by bank wire']");
+	private By ClickOnConfirmOrder = By.xpath("//*[@id=\"cart_navigation\"]/button/span");	   
+	private By OrderMsg = By.xpath("//div[@id='center_column']/div/p/strong");
+	private By CheckAmount = By.xpath("//*[text()='$35.02']");
     
 
     // Constructor of the page:

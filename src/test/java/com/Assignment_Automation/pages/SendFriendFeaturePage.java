@@ -16,14 +16,14 @@ public class SendFriendFeaturePage  extends BasePage{
 	ElementActions elementActions;
 
 	// By Locator -SendRequest
-	By T_shirtBTn = By.xpath("//div[@id='block_top_menu']/ul/li[3]/a");
-	By ProductImgClick=By.xpath("//div[@class='product-image-container']/a/img");
-    By MoreBtn = By.xpath("//a[@title='View']/span");
-	By sendfrndLinkclick = By.xpath("//*[@id='send_friend_button']");
-	By frndName = By.id("friend_name");
-	By frndEmail = By.id("friend_email");
-	By clickonSubmit = By.xpath("//*[@id='sendEmail']/span");
-	By sendmailsusccessMsg = By.xpath("//div[@class='fancybox-inner']/p[1]");
+	private By T_shirtBTn = By.xpath("//div[@id='block_top_menu']/ul/li[3]/a");
+	private By ProductImgClick=By.xpath("//div[@class='product-image-container']/a/img");
+	private By MoreBtn = By.xpath("//a[@title='View']/span");
+	private By sendfrndLinkclick = By.xpath("//*[@id='send_friend_button']");
+	private By frndName = By.id("friend_name");
+	private By frndEmail = By.id("friend_email");
+	private By clickonSubmit = By.xpath("//*[@id='sendEmail']/span");
+	private By sendmailsusccessMsg = By.xpath("//div[@class='fancybox-inner']/p[1]");
 	// Constructor of the page:
 		public SendFriendFeaturePage(WebDriver driver) {
 			elementActions = new ElementActions(driver);
